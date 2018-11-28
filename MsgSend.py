@@ -6,7 +6,7 @@ import os, time
 
 time.sleep(2)
 os.system('autoRun1.py')
-time.sleep(8)
+time.sleep(2)
 
 CHANNEL_ACCESS_TOKEN = "gi2NdIngaDaOHkfhfBWR8zLH2OAgaTWE2+2lE/cO9qe99Bu0ssQdn7cwb6fkyv/+oHMWYgLueyuymUi6O6uDVzF0RUt4Hzyem3b6BrqaPoPC1KPue96tK5cuOFa/egyOIB69ZWrdJ2cDxwQFon2h1wdB04t89/1O/w1cDnyilFU="
 to = "C53b5598030c8990ab7e2f525ecdf02e0"
@@ -21,6 +21,7 @@ if os.path.isfile('imageFileName.txt'):
 
 #文字訊息
 import os
+alarmText = ''
 if os.path.isfile('alarmText.txt'): 
 	with open('alarmText.txt', 'r') as file :
 		alarmText = file.readline()
