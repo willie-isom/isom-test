@@ -5,7 +5,7 @@ from linebot.models import ImageSendMessage, LocationSendMessage, StickerSendMes
 import os, time
 
 
-time.sleep(5)
+time.sleep(1)
 
 CHANNEL_ACCESS_TOKEN = "gi2NdIngaDaOHkfhfBWR8zLH2OAgaTWE2+2lE/cO9qe99Bu0ssQdn7cwb6fkyv/+oHMWYgLueyuymUi6O6uDVzF0RUt4Hzyem3b6BrqaPoPC1KPue96tK5cuOFa/egyOIB69ZWrdJ2cDxwQFon2h1wdB04t89/1O/w1cDnyilFU="
 to = "C53b5598030c8990ab7e2f525ecdf02e0"
