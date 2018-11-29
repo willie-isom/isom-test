@@ -30,7 +30,7 @@ except LineBotApiError as e:
 	raise e
 	
 try:
-	line_bot_api.push_message(to, TextSendMessage(text='1'))
+	line_bot_api.push_message(to, TextSendMessage(text='3'))
 except LineBotApiError as e:
 	raise e
 	
