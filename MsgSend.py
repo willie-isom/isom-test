@@ -23,7 +23,7 @@ import os
 alarmText = ''
 if os.path.isfile('alarmText.txt'): 
 	with open('alarmText.txt', 'r') as file :
-		alarmText = file.readline()
+		alarmText = file.readline().strip()
 try:
 	line_bot_api.push_message(to, TextSendMessage(text=alarmText))
 except LineBotApiError as e:
