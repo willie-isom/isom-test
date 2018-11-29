@@ -30,7 +30,7 @@ except LineBotApiError as e:
 	raise e
 	
 try:
-	line_bot_api.push_message(to, 'https://github.com/willie-isom/isom-test/blob/master/1.xlsx?raw=true')
+	line_bot_api.push_message(to, '4444')
 except LineBotApiError as e:
 	raise e
 
