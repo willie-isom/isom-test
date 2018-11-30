@@ -20,10 +20,11 @@ if os.path.isfile('imageFileName.txt'):
 
 #文字訊息
 import os
-alarmText = ''
+alarmText = '123'
 if os.path.isfile('alarmText.txt'): 
-	with open('alarmText.txt', 'r') as file :
-		alarmText = file.readline().strip()
+	with open('alarmText.txt', 'r', encoding = 'utf-8') as file :
+		pass
+		#alarmText = file.readline()
 try:
 	line_bot_api.push_message(to, TextSendMessage(text=alarmText))
 except LineBotApiError as e:
