@@ -24,7 +24,7 @@ alarmText = '123'
 if os.path.isfile('alarmText.txt'): 
 	with open('alarmText.txt', 'r', encoding='utf16') as file :
 		#pass
-		alarmText = file.readline()
+		alarmText = file.read()
 try:
 	line_bot_api.push_message(to, TextSendMessage(text=alarmText))
 except LineBotApiError as e:
