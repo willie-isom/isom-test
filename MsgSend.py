@@ -41,7 +41,7 @@ image_url = r"https://raw.githubusercontent.com/willie-isom/isom-test/master/" +
 
 try:
 	pass
-	#line_bot_api.push_message(to, ImageSendMessage(original_content_url=image_url, preview_image_url=image_url))
+	line_bot_api.push_message(to, ImageSendMessage(original_content_url=image_url, preview_image_url=image_url))
 except LineBotApiError as e:
 	raise e
 
