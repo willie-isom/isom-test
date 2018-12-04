@@ -5,7 +5,7 @@ from linebot.models import ImageSendMessage, LocationSendMessage, StickerSendMes
 import os, time
 
 
-time.sleep(1)
+#time.sleep(1)
 
 CHANNEL_ACCESS_TOKEN = "gi2NdIngaDaOHkfhfBWR8zLH2OAgaTWE2+2lE/cO9qe99Bu0ssQdn7cwb6fkyv/+oHMWYgLueyuymUi6O6uDVzF0RUt4Hzyem3b6BrqaPoPC1KPue96tK5cuOFa/egyOIB69ZWrdJ2cDxwQFon2h1wdB04t89/1O/w1cDnyilFU="
 to = "C53b5598030c8990ab7e2f525ecdf02e0"
@@ -20,17 +20,18 @@ if os.path.isfile('imageFileName.txt'):
 
 #文字訊息
 import os
-alarmText = ''
+alarmText = '123'
 if os.path.isfile('alarmText.txt'): 
-	with open('alarmText.txt', 'r') as file :
-		alarmText = file.readline().strip()
+	with open('alarmText.txt', 'r', encoding='utf16') as file :
+		alarmText = file.read()
 try:
 	line_bot_api.push_message(to, TextSendMessage(text=alarmText))
 except LineBotApiError as e:
 	raise e
 	
 try:
-	line_bot_api.push_message(to, TextSendMessage(text='https://github.com/willie-isom/isom-test/blob/master/1.xlsx?raw=true'))
+	pass
+	#line_bot_api.push_message(to, TextSendMessage(text='https://github.com/willie-isom/isom-test/blob/master/1.xlsx?raw=true'))
 except LineBotApiError as e:
 	raise e
 
@@ -39,7 +40,8 @@ line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 image_url = r"https://raw.githubusercontent.com/willie-isom/isom-test/master/" + imageFileName
 
 try:
-	line_bot_api.push_message(to, ImageSendMessage(original_content_url=image_url, preview_image_url=image_url))
+	pass
+	#line_bot_api.push_message(to, ImageSendMessage(original_content_url=image_url, preview_image_url=image_url))
 except LineBotApiError as e:
 	raise e
 
